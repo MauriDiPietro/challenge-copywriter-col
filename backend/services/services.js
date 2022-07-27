@@ -5,3 +5,8 @@ export const invertText = (text) => {
     return joinArraytoString; 
 }
 
+export const isPalindrome = (text) => {
+    const strReversed = text.split("").reverse().join("");
+    return strReversed === text ? "true" : "false";
+}
+
