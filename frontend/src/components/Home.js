@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import axios from 'axios'
+import './Home.css'
 
 const Home = () => {
 
@@ -18,16 +19,16 @@ const upText = async() =>{
 
   return (
     <>
-    <div>
+    <div className='containerInput'>
       
             <input
                 value={text}
                 onChange={(e)=>setText(e.target.value)}
                 type='text'
                 placeholder='insert text'
-                className='form-control'
+                className='form-control inputText'
             />
-            <button onClick={upText} className='btn btn-primary' >Send</button>
+            <button onClick={upText} className='btn btn-primary btnText' >Send</button>
        
     </div>
     <div>

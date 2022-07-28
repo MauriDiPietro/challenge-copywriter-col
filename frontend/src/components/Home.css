@@ -1,0 +1,17 @@
+.containerInput{
+    width: 50%;
+    /* margin-left: 20px; */
+    padding: 20px;
+}
+
+.inputText{
+    margin-top: 10px;
+    height: 30px;
+}
+
+.btnText{
+    padding: 10px;
+    position: absolute;
+    top: 25px;
+    margin-left: 310px 
+}
