@@ -2,6 +2,8 @@ import express from 'express'
 import morgan from 'morgan'
 import apiRoutes from './routes/routes.js'
 import cors from 'cors'
+import dotenv from 'dotenv'
+dotenv.config()
 
 const app = express()
 
@@ -12,8 +14,6 @@ app.use(morgan('dev'))
 
 app.use('/', apiRoutes)
 
-const PORT = 8087
-
-app.listen(PORT, () => console.log(`Server run on PORT ${PORT}`))
+app.listen(process.env.PORT, () => console.log(`Server run on PORT ${process.env.PORT}`))
 
 export default app
