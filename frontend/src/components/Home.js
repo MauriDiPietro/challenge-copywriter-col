@@ -7,10 +7,11 @@ const Home = () => {
 const [texts, setTexts] = useState([])   
 const [text, setText] = useState('')  
 
-const URL = 'http://localhost:8087/iecho'
+const URLDeploy = 'https://challengeapp28072022.herokuapp.com'
+const URL = 'http://localhost:8087'
 
 const upText = async() =>{ 
-    const response = await axios.get(`${URL}?text=${text}`)
+    const response = await axios.get(`${URLDeploy}/iecho?text=${text}`)
     console.log(response.data)
     setTexts([...texts, response.data])
  }
